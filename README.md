@@ -1,4 +1,4 @@
-This is a clone of the Alfa [repository](https://gitlab.com/NobleworksSoftware/icon-overlay-plugin), for customization and support.
+This is a clone of the [repository](https://gitlab.com/NobleworksSoftware/icon-overlay-plugin), for customization and support.
 
 # IconOverlayPlugin
 This is an Android gradle plugin that allows you to overlay text on top of an android application's
