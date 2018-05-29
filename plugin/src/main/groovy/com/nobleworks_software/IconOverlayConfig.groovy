@@ -26,7 +26,7 @@ class IconOverlayConfig
     {
         return new IconOverlayConfig(
                 enabled: false,
-                fontSize: 8,
+                fontSize: 10,
                 verticalLinePadding: 2,
                 backgroundOverlayColor: [0, 0, 0, 136],
                 textColor: [255, 255, 255, 255],
