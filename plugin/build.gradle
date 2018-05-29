@@ -1,0 +1,33 @@
+plugins {
+    id "com.gradle.plugin-publish" version "0.9.9"
+}
+
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+    google()
+    jcenter()
+}
+
+dependencies {
+    compileOnly gradleApi()
+    compileOnly "com.android.tools.build:gradle:3.0.1"
+}
+
+pluginBundle {
+    website = 'https://gitlab.com/NobleworksSoftware/icon-overlay-plugin'
+    vcsUrl = 'https://gitlab.com/NobleworksSoftware/icon-overlay-plugin'
+    description = 'This is an Android gradle plugin that allows you to overlay ' +
+            'text on top of an android application\'s icon to easily convey ' +
+            'information about the app to testers, such as version or flavor.'
+    tags = ['android']
+
+    plugins {
+        iconOverlayPlugin {
+            id = 'com.nobleworks_software.icon-overlay'
+            displayName = 'Android Icon Overlay plugin'
+            version gitflow.getVersion(rootProject).toString()
+        }
+    }
+}
