@@ -1,0 +1,21 @@
+import static org.gradle.api.tasks.wrapper.Wrapper.DistributionType
+
+plugins {
+    id "com.nobleworks_software.gradle-gitflow-plugin" version "2.2.0"
+}
+
+gitflow {
+    onVersionChange { event ->
+        def readme = new File("README.md")
+        readme.write(
+            readme.text.replaceAll(
+                "\\d+\\.\\d+\\.\\d+(-SNAPSHOT)?",
+                "${event.newVersion.removeSnapshot()}"
+            )
+        )
+    }
+}
+
+task wrapper(type: Wrapper) {
+    distributionType = DistributionType.ALL
+}
