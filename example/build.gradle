@@ -26,8 +26,8 @@ android {
         versionName "1.0"
 
         iconOverlay {
-            fontSize = 10
             text = { "$versionName" }
+            fontSize = 10
         }
     }
 
