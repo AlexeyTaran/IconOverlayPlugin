@@ -1,7 +1,2 @@
 include ':example'
-pluginManagement.repositories {
-    maven{ url = '../consuming/maven-repo' }
-    gradlePluginPortal()
-}
-
 include 'plugin'
