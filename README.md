@@ -14,18 +14,18 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.nobleworks_software.icon-overlay:icon-overlay-plugin:1.4.1"
+    classpath "gradle.plugin.IconOverlayPlugin:plugin:1.0"
   }
 }
 
-apply plugin: "com.nobleworks_software.icon-overlay"
+apply plugin: "com.dmlukas.iconoverlay"
 ```
 
 Build script snippet for new, incubating, plugin mechanism introduced in Gradle 2.1:
 
 ```
 plugins {
-  id "com.nobleworks_software.icon-overlay" version "1.4.1"
+   id "com.dmlukas.iconoverlay" version "1.0"
 }
 ```
 
