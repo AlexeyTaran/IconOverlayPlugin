@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">example</string>
+    <string name="test_activity">Test activity</string>
+</resources>

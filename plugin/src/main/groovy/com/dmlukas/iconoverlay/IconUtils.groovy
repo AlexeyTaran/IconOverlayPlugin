@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.nobleworks_software
+package com.dmlukas.iconoverlay
 
 import com.google.common.collect.Lists
 import groovy.io.FileType
@@ -26,7 +26,6 @@ import java.awt.*
 import java.awt.image.BufferedImage
 import java.util.List
 
-import static com.nobleworks_software.IconOverlayConfig.POSITION_TOP
 import static java.awt.RenderingHints.KEY_TEXT_ANTIALIASING
 import static java.awt.RenderingHints.VALUE_TEXT_ANTIALIAS_ON
 
@@ -142,7 +141,7 @@ class IconUtils {
         final float linePadding = config.verticalLinePadding * scale
         final int lineCount = lines.length
         final float totalLineHeight = (fontSize + linePadding + 1) * lineCount
-        final boolean isTopAligned = POSITION_TOP.equalsIgnoreCase(config.position)
+        final boolean isTopAligned = IconOverlayConfig.POSITION_TOP.equalsIgnoreCase(config.position)
 
         // Bottom aligned text is drawn from bottom up with lines reversed
         String[] linesToDraw

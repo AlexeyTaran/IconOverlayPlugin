@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.nobleworks_software
+package com.dmlukas.iconoverlay
 
 class IconOverlayConfig
 {
@@ -26,7 +26,7 @@ class IconOverlayConfig
     {
         return new IconOverlayConfig(
                 enabled: false,
-                fontSize: 8,
+                fontSize: 10,
                 verticalLinePadding: 2,
                 backgroundOverlayColor: [0, 0, 0, 136],
                 textColor: [255, 255, 255, 255],
